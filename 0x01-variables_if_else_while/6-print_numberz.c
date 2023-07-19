@@ -16,7 +16,7 @@ int main(void)
 	for (; i <= number_end; i++)
 	{
 		putchar(i);
-		putchar('*');
+		putchar('\0');
 	}
 		return (0);
 }
