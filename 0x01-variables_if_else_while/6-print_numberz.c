@@ -16,8 +16,9 @@ int main(void)
 	for (; i <= number_end; i++)
 	{
 		putchar(i);
-		putchar('\n');
+		putchar(' ');
 	}
+	putchar('\n');
 	return (0);
 }
 
