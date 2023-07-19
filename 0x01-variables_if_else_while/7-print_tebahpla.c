@@ -14,6 +14,7 @@ int main(void)
 	{
 		putchar(tebahpla);
 	}
-	printf('\n');
+	putchar('\n');
 
 	return (0);
+}
