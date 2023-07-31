@@ -1,26 +1,27 @@
 #include "main.h"
 
 /**
- * _strpbrk - function that locates a substring
- * @s: pointer to the input string
- * @accept: pointer to the string containing characters to search for
+ * _strstr - finds the first occurrence of a substring within a string
+ * @haystack: string
+ * @needle: substring
  * Return: Always 0 (Success)
  */
 
-char *_strpbrk(char *s, char *accept)
+char *_strstr(char *haystack, char *needle)
 {
-	int k;
-
-	while (*s)
+	for (; *haystack != '\0'; haystack++)
 	{
-		for (k = 0; accept[k]; k++)
+		char *l = haystack;
+		char *p = needle;
+
+		while (*l == *p && *p != '\0')
 		{
-		if (*s == accept[k])
-		return (s);
+			l++;
+			p++;
 		}
-	s++;
+
+		if (*p == '\0')
+			return (haystack);
 	}
-	return ('\0');
+	return (0);
 }
-
-
