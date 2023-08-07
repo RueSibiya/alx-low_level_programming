@@ -11,11 +11,11 @@ int main(int argc, char *argv[])
 {
 	if (argc > 0)
 	{
-	printf("Program Name: %s\n", argv[0]);
+	printf("mynameis %s\n", argv[0]);
 	}
 	else
 	{
-		printf("New name.\n");
+		printf("mynewnameis \n");
 	}
 	return (0);
 }
