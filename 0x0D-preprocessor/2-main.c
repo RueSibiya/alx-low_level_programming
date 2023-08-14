@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
 * main - prints file name
@@ -7,7 +8,7 @@
 
 int main(void)
 {
-       printf("%s\n", __FILE__);
-       return (0);
+	printf("%s\n", __FILE__);
+	return (0);
 }
 
